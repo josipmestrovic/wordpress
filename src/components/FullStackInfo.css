@@ -1,0 +1,53 @@
+.fullstack-info-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .fullstack-info-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .fullstack-info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .fullstack-info-section p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .situations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .situation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .situation-item i {
+    color: #0070f3;
+    font-size: 1.75rem;
+    margin-top: 0.2rem;
+    min-width: 40px;
+    text-align: center;
+  }
+  

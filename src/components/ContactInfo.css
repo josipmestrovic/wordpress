@@ -1,0 +1,114 @@
+/* Contact Info Section */
+.contact-info-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.contact-info-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-info-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: left;
+}
+
+/* Contact Info Wrapper */
+.contact-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Contact Block */
+.contact-block {
+  background-color: #fff;
+  border: 1px solid #eaeaea; /* Minimalistic thin border */
+  border-radius: 8px;
+  padding: 2rem;
+  flex: 1 1 300px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Email Block */
+.email-block {
+  text-align: left;
+}
+
+/* Email Header */
+.email-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.email-header i {
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.email-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #666;
+}
+
+/* Copy Button */
+.copy-button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: auto;
+  transition: color 0.3s ease;
+}
+
+.copy-button:hover {
+  color: #666;
+}
+
+@media screen and (max-width: 1099px) {
+  .copy-button {
+    display: none;
+  }
+}
+
+
+/* LinkedIn Block */
+.linkedin-block {
+  text-align: left;
+}
+
+.linkedin-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.linkedin-cta:hover {
+  color: #666;
+}
+
+.linkedin-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: -8px;
+}

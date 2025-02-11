@@ -1,0 +1,235 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Match the container styles from ContactInfo.css */
+.how-it-works-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.how-it-works-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Timeline Styles */
+#timeline {
+  position: relative;
+  margin: 30px auto;
+  padding: 0 20px;
+  transition: all 0.4s ease;
+}
+
+/* Vertical timeline line */
+#timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #333;
+}
+
+/* Clearfix for timeline items */
+#timeline .timeline-item:after,
+#timeline .timeline-item:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  background: #333;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.timeline-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.timeline-content p {
+  padding: 10px 0;
+  color: #666;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Updated timestamp styling */
+.timeline-content .time-stamp {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #333;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 10px;
+}
+
+/* Arrow on the content box */
+.timeline-item .timeline-content:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #333;
+  left: 100%;
+  margin-left: -7px;
+}
+
+.timeline-item.right .timeline-content {
+  float: right;
+}
+
+.timeline-item.right .timeline-content:before {
+  left: auto;
+  right: 100%;
+  border-left: 0;
+  border-right: 7px solid #333;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    width: 90%;
+    padding: 0;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  .timeline-item .timeline-content:before,
+  .timeline-item.right .timeline-content:before {
+    left: 10%;
+    border-left: 0;
+    border-right: 7px solid #333;
+  }
+  .timeline-icon {
+    left: 0;
+  }
+}
+
+/* Optional animation classes (if desired) */
+.timeline-icon.is-hidden {
+  visibility: hidden;
+}
+
+.timeline-icon.animate-it {
+  visibility: visible;
+  animation: bounce-1 0.6s;
+}
+
+.timeline-content.is-hidden {
+  visibility: hidden;
+}
+
+.timeline-content.animate-it {
+  visibility: visible;
+  animation: bounce-2 0.6s;
+}
+
+@media only screen and (min-width: 769px) {
+  .timeline-content.right.animate-it {
+    animation: bounce-2-inverse 0.6s;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline-content.animate-it,
+  .timeline-content.right.animate-it {
+    animation: bounce-2-inverse 0.6s;
+  }
+}
+
+@keyframes bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce-2-inverse {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
