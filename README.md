@@ -1,10 +1,10 @@
-Project backup for [https://farmaceut.hr](https://farmaceut.hr/)
+Project backup for [FARMACEUT.HR](https://farmaceut.hr/)
 
 
-Currently, two following features are available:
+Currently, the following features are available:
 
-- [Quizzies](https://farmaceut.hr/](https://farmaceut.hr/kviz/)
-- [Health Forum](https://farmaceut.hr/](https://farmaceut.hr/kviz/)
+- [Quizzies](https://farmaceut.hr/kvizovi)
+- [Health Forum](https://farmaceut.hr/forum-za-zdravlje)
 - [Health Advices](https://farmaceut.hr/)
 - [Health Tools](https://farmaceut.hr/alati/)
 
